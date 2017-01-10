@@ -69,8 +69,14 @@ The Office add-in is a little more tricky in PHP, at least compared to building 
 
     	<SourceLocation DefaultValue="https://localhost/mygroups/index.php?addin=1" />
 
+2. Use exactly the same value for the DefaultValue attribute of the "<bt:Url id="Contoso.Taskpane.Url" element further down in the file.
+
+    	<bt:Url id="Contoso.Taskpane.Url DefaultValue="https://localhost/mygroups/index.php?addin=1" />
+
 2. Save the changes to the OfficeManifest.xml file and deploy it using the steps outlined in [Create a network shared folder catalog for task pane and content add-ins](https://msdn.microsoft.com/EN-US/library/office/fp123503.aspx "Create a network shared folder catalog for task pane and content add-ins") OR [Publish task pane and content add-in to an add-in catalog on SharePoint](https://msdn.microsoft.com/EN-US/library/office/fp123517.aspx "Publish task pane and content add-in to an add-in catalog on SharePoint").
-3. If your local web server environment is running, you should be able to open Excel and launch the add-in:
+3. Sideload the add-in as described in [Sideload your add-in](https://dev.office.com/docs/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins#sideload-your-add-in). When this is done, there will be a new tab called **Groups API** on the **Home** ribbon in Excel (not shown in the screenshot below). 
+4. Click the **Open** button in the **Groups API** tab. When the task pane opens, it should look like the screenshot below:
+
 ![Add-in successful load](http://i.imgur.com/PFNfSIJ.png)
 
 > NOTE: Office add-ins must register any domain they will display in AppDomains section of the add-in manifest. This application has registered login.microsoftonline.com, which is the normal login page for Office 365. If you use a federated login, the add-in will not function as the federated login screen will get kicked out into a popup. It is possible to build a functional add-in with federation/popups, but was not the focus of this app.
