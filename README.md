@@ -80,3 +80,6 @@ The Office add-in is a little more tricky in PHP, at least compared to building 
 ![Add-in successful load](http://i.imgur.com/PFNfSIJ.png)
 
 > NOTE: Office add-ins must register any domain they will display in AppDomains section of the add-in manifest. This application has registered login.microsoftonline.com, which is the normal login page for Office 365. If you use a federated login, the add-in will not function as the federated login screen will get kicked out into a popup. It is possible to build a functional add-in with federation/popups, but was not the focus of this app.
+
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
