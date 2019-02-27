@@ -1,3 +1,16 @@
+---
+topic: sample
+products:
+- Office 365
+languages:
+- PHP
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  - Azure AD
+  createdDate: 8/3/2015 12:13:21 PM
+---
 # Groups-API-Office-Add-in-PHP-Sample
 This repository contains a PHP code sample that connects to the Office 365 Groups API as both a stand-alone web application and from within an Office add-in.
 
