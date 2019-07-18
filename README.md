@@ -1,9 +1,9 @@
 ---
 topic: sample
 products:
-- Office 365
+- office-365
 languages:
-- PHP
+- php
 extensions:
   contentType: samples
   technologies:
